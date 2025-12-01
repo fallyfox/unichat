@@ -1,4 +1,4 @@
-const schedules = [
+export const schedules = [
     {
         title: "Meeting with Water Preservation Stakeholders",
         desc: "The goal of this meeting is to conduct a performance and effectiveness assessment of on-going projects."

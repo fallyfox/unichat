@@ -1,11 +1,14 @@
+import { Link } from "expo-router";
 import { Button, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
 export default function Subscribe () {
     return (
         <View style={styles.wrapper}>
+            
             <TouchableOpacity style={styles.touch}>
-                <Text style={{ fontSize: 20, textAlign: "center",color:"white"}}>Get Started</Text>
-                <Text style={{ fontSize: 12, textAlign: "center",color:"oldlace"}}>Join us for amazing benefits</Text>
+                <Link href="schedules">
+                    <Text style={{ fontSize: 20, textAlign: "center",color:"white"}}>Upcoming Schedules</Text>
+                </Link>
             </TouchableOpacity>
 
             <Text style={styles.headingText}>Subscribe to our newsletter</Text>
