@@ -10,6 +10,11 @@ export default function Subscribe () {
                     <Text style={{ fontSize: 20, textAlign: "center",color:"white"}}>Upcoming Schedules</Text>
                 </Link>
             </TouchableOpacity>
+            <TouchableOpacity style={styles.touch}>
+                <Link href="about">
+                    <Text style={{ fontSize: 20, textAlign: "center",color:"white"}}>About Unichat</Text>
+                </Link>
+            </TouchableOpacity>
 
             <Text style={styles.headingText}>Subscribe to our newsletter</Text>
             <TextInput
