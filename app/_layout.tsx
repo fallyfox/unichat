@@ -21,11 +21,18 @@ export default function RootLayout() {
         headerShown: false
       }}/>}
 
-       <Stack.Screen
+      <Stack.Screen
       name="sign-in"
       options={{ 
         title: "Sign in",
         headerShown: false
+      }}/>
+      
+      <Stack.Screen
+      name="create-discussion"
+      options={{ 
+        title: "Create discussion",
+        headerShown: true
       }}/>
     </Stack>
   )
