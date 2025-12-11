@@ -38,5 +38,9 @@ export const discussionCategories = [
     {
         label: "Convocation",
         value: "convocation"
-    }
+    },
+    {
+        label: "Room mate",
+        value: "room-mate"
+    },
 ];
