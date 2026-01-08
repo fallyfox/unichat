@@ -9,7 +9,7 @@ const firebaseConfig = {
   projectId: "unichat-78c9c",
   storageBucket: "unichat-78c9c.firebasestorage.app",
   messagingSenderId: "818941162200",
-  appId: "1:818941162200:web:6073576557ddabe8805dad"
+  appId: "1:818941162200:web:6efbb007392f9989805dad"
 };
 
 const app = getApps.length == 0 ? initializeApp(firebaseConfig) : getApp();
