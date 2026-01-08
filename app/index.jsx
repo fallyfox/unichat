@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { StyleSheet, Text, View } from "react-native";
 import Background from "../components/background";
 import Photos from "../components/photos";
@@ -38,3 +39,14 @@ const styles = StyleSheet.create({
         fontSize: 14
     }
 })
+=======
+import { Text, View } from "react-native";
+
+export default function Index () {
+    return (
+        <View>
+            <Text>/Index</Text>
+        </View>
+    )
+}
+>>>>>>> master
