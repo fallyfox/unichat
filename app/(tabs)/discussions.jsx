@@ -6,6 +6,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import DiscussionPostCard from "../../components/DiscussionPostCard";
 import { db } from "../../confiq/firebase";
 
 SplashScreen.preventAutoHideAsync();
@@ -57,12 +58,7 @@ export default function Discussion () {
                     <FlatList 
                     data={data}
                     renderItem={({item}) => {
-                        return (
-                            <View>
-                                <Text style={{fontWeight: "bold"}}>{item.data.title}</Text>
-                                <Text>{item.data.text}</Text>
-                            </View>
-                        )
+                        return <DiscussionPostCard postData={item}/>
                     }}
                     keyExtractor={(item) => item.id}
                     ItemSeparatorComponent={() => (
@@ -83,7 +79,8 @@ const styles = StyleSheet.create({
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        alignItems: "flex-end"
+        alignItems: "flex-end",
+        marginBottom: 16,
     },
     brandText: {
         fontFamily: "monradok",
