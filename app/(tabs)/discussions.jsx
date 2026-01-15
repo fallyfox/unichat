@@ -73,7 +73,8 @@ export default function Discussion () {
 const styles = StyleSheet.create({
     wrapper: {
         flex: 1,
-        paddingHorizontal: 12
+        paddingHorizontal: 12,
+        paddingBottom: 60
     },
     header :{
         display: "flex",
