@@ -62,7 +62,7 @@ export default function Discussion () {
                     }}
                     keyExtractor={(item) => item.id}
                     ItemSeparatorComponent={() => (
-                        <View style={{height: 16}}></View>
+                        <View style={{height: 32}}></View>
                     )}/>
                 </View>
             </SafeAreaView>
