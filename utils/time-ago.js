@@ -1,0 +1,27 @@
+export function timeAgo(timestamp) {
+  const now = new Date();
+  const past = new Date(timestamp);
+  const secondsAgo = Math.floor((now - past) / 1000);
+
+  // Define time intervals in seconds
+  const intervals = {
+    year: 31536000,
+    month: 2592000,
+    week: 604800,
+    day: 86400,
+    hour: 3600,
+    minute: 60,
+    second: 1
+  };
+
+  // Find the largest interval that fits the secondsAgo
+  for (const [unit, secondsInUnit] of Object.entries(intervals)) {
+    const intervalValue = Math.floor(secondsAgo / secondsInUnit);
+
+    if (intervalValue >= 1) {
+      return `${intervalValue} ${unit}${intervalValue > 1 ? 's' : ''} ago`;
+    }
+  }
+
+  return "just now";
+}
